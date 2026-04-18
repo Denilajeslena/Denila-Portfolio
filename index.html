@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of a 1st year B.Tech CSE student focused on AI, IoT, Embedded Systems, and Full Stack Development."
+    />
+    <title>AI & IoT Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header glass">
+      <nav class="navbar container" aria-label="Primary">
+        <a class="brand" href="#hero">Portfolio</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="scroll-root">
+      <section id="hero" class="section hero-compact container reveal">
+        <div class="hero-banner" role="img" aria-label="Featured portfolio banner">
+          <div class="hero-overlay"></div>
+
+          <p class="hero-tag hero-top-left">Portfolio</p>
+          <p id="hero-date" class="hero-tag hero-top-right"></p>
+
+          <div class="hero-center">
+            <h1 class="hero-main">Denila Jeslena W</h1>
+            <p class="hero-sub">AI • IoT • Frontend Developer</p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Contact</a>
+            </div>
+          </div>
+
+          <div class="hero-bottom-row" aria-hidden="true">
+            <p>Denila Jeslena W</p>
+            <p>denilajeslena@gmail.com</p>
+            <p>9629496333</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Work</p>
+          <h2>Projects</h2>
+          <p>
+            End-to-end systems across healthcare AI, campus safety, agriculture automation,
+            accessibility, and embedded control.
+          </p>
+        </div>
+        <div id="project-grid" class="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="skills" class="section container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Core Expertise</p>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-tag glass reveal">Python</article>
+          <article class="skill-tag glass reveal">C</article>
+          <article class="skill-tag glass reveal">React</article>
+          <article class="skill-tag glass reveal">MongoDB</article>
+          <article class="skill-tag glass reveal">AI &amp; Machine Learning</article>
+          <article class="skill-tag glass reveal">Embedded Systems</article>
+          <article class="skill-tag glass reveal">JavaScript</article>
+          <article class="skill-tag glass reveal">HTML</article>
+          <article class="skill-tag glass reveal">CSS</article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Profile</p>
+          <h2>About Me</h2>
+        </div>
+        <article class="about-card glass">
+          <p>
+            I am a first-year B.Tech CSE student at Karunya Institute of Technology and Sciences with a strong interest in building intelligent, real-world systems. My work focuses on combining Artificial Intelligence, IoT, and embedded systems to solve practical challenges. I have developed projects in areas such as healthcare monitoring, smart irrigation, campus safety, and accessibility solutions. These experiences have helped me understand how data, hardware, and software interact in real-time environments.
+          </p>
+          <p>
+            I enjoy designing systems end-to-end, from sensor integration and data processing to user-friendly interfaces. My technical skills include Python, C, React, MongoDB, and core web technologies like HTML, CSS, and JavaScript. I am particularly interested in machine learning applications that enhance automation and decision-making. I focus on building solutions that are efficient, scalable, and easy to use.
+          </p>
+          <p>
+            I actively explore new technologies and continuously improve my development and problem-solving skills. My goal is to create impactful systems that bridge the gap between intelligent software and the physical world.
+          </p>
+        </article>
+      </section>
+
+      <section id="contact" class="section container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Get In Touch</p>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card glass" href="mailto:denilajeslena@gmail.com">
+            <h3>Email</h3>
+            <p>denilajeslena@gmail.com</p>
+          </a>
+          <a class="contact-card glass" href="https://github.com/Denilajeslena" target="_blank" rel="noreferrer">
+            <h3>GitHub</h3>
+            <p>github.com/Denilajeslena</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">Top</button>
+
+    <dialog id="project-modal" class="project-modal">
+      <article class="modal-panel glass">
+        <button id="modal-close" class="modal-close" aria-label="Close project details">&times;</button>
+        <header class="modal-header">
+          <p class="eyebrow">Project Details</p>
+          <h3 id="modal-title"></h3>
+        </header>
+        <p id="modal-description"></p>
+        <div class="modal-block">
+          <h4>Technologies</h4>
+          <p id="modal-tech"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Key Components</h4>
+          <ul id="modal-components"></ul>
+        </div>
+        <div id="modal-gallery-block" class="modal-block">
+          <h4>Image Gallery</h4>
+          <div id="modal-gallery" class="modal-gallery"></div>
+        </div>
+        <p id="modal-no-gallery" class="modal-note" hidden>
+          Visual assets are not available for this project yet.
+        </p>
+      </article>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
